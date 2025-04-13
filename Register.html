@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATA Fusion Cuisine - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Home.html">
+                <img src="RATA1.png" alt="RATA">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="Reservation.html">Reservation</a>
+            <a href="Menu.html">Menu</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="right-icons">
+            <div class="user-dropdown">
+                <img src="usericon.png" alt="User Icon" class="userIcon">
+                <div class="dropdown-content">
+                    <a href="login.html" id="login-link" style="display: block;">Login</a>
+                    <a href="register.html" id="register-link" style="display: block;">Register</a>
+                    <a href="profile.html" id="profile-link" style="display: none;">Profile</a>
+                    <a href="Home.html" id="logout-link" style="display: none;">Logout</a>
+                </div>
+            </div>
+            <div class="barst">
+                <img src="Web Fundamentals/hamburger-icon.png" alt="Hamburger Menu" class="hamburger-icon">
+            </div>
+        </div>
+        <div class="back-arrow">
+            <a href="javascript:history.back()">
+              <img src="back-arrow.png" alt="Go Back" class="back-arrow-icon">
+            </a>
+          </div>
+    </header>
+
+        <main>
+            <div class="form-container">
+                <h2>Register</h2>
+                <form id="signup-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+            
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+            
+                    <button type="submit">Sign Up</button>
+                  </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>Managed by RATA</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/RATASubangJaya/?locale=ms_MY">
+                <img src="facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/rata_subang/?hl=en">
+                <img src="instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+            <p>&copy; RATA 2024. All rights reserved.</p>
+        </footer>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>

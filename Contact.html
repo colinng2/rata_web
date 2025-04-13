@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATA Fusion Cuisine - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Home.html">
+                <img src="RATA1.png" alt="RATA">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="Reservation.html">Reservation</a>
+            <a href="Menu.html">Menu</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Contact.html" class="active">Contact</a>
+        </nav>
+        <div class="right-icons">
+            <div class="user-dropdown">
+                <img src="usericon.png" alt="User Icon" class="userIcon">
+                <div class="dropdown-content">
+                    <a href="login.html" id="login-link" style="display: block;">Login</a>
+                    <a href="register.html" id="register-link" style="display: block;">Register</a>
+                    <a href="profile.html" id="profile-link" style="display: none;">Profile</a>
+                    <a href="Home.html" id="logout-link" style="display: none;">Logout</a>
+                </div>
+            </div>
+            <div class="barst">
+                <img src="hamburger-icon.png" alt="Hamburger Menu" class="hamburger-icon">
+            </div>
+        </div>
+        <div class="back-arrow">
+            <a href="javascript:history.back()">
+              <img src="back-arrow.png" alt="Go Back" class="back-arrow-icon">
+            </a>
+          </div>
+    </header>
+    
+    <main>
+    <div class="contact-info-container">
+        <section class="contact-info">
+            <h2>Find us at:</h2>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <img src="phone_icon.png" alt="Phone Icon">
+                  <p><b>Customer Service</b></p>
+                  <p>+60 12-348 1194</p>
+                </div>
+                <div class="contact-item">
+                  <img src="email_icon.png" alt="Email Icon">
+                  <p><b>Customer Service Email</b></p>
+                  <p>melinder.dhaliwal@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                  <img src="clock_icon.png" alt="Clock Icon">
+                  <p><b>Working Hours</b></p>
+                  <p>11:30 AM - 11:30 PM</p>
+                </div>
+                <div class="contact-item">
+                    <img src="location_icon.png" alt="Location Icon">
+                    <p><b>Location</b></p>
+                    <p>25, SS15/5A, Subang Jaya, Malaysia</p>
+                 </div>
+        </section>    
+    </div>  
+
+        <div class="contact-container">
+            <h2>Contact Us!</h2>
+            <form class="contact-form">
+
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="phone">Phone Number:</label>
+                    <div class="phone-number-container">
+                      <select id="country-code" name="country-code" required>
+                        <option value="+60">+60 🇲🇾</option>
+                        <option value="+65">+65 🇸🇬</option>
+                      </select>
+                      <input type="tel" id="phone" name="phone" required>
+                    </div>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+        
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              
+              <button type="submit">Send</button>
+              <p id="error-message" style="color: red; display: none;"></p>
+            </form>
+        </div>
+</main>
+
+    <footer>
+        <p>Managed by RATA</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/RATASubangJaya/?locale=ms_MY">
+            <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/rata_subang/?hl=en">
+            <img src="instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+        <p>&copy; RATA 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATA Fusion Cuisine - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Home.html">
+                <img src="RATA1.png" alt="RATA">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="Reservation.html">Reservation</a>
+            <a href="Menu.html" class="active">Menu</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="right-icons">
+            <div class="user-dropdown">
+                <img src="usericon.png" alt="User Icon" class="userIcon">
+                <div class="dropdown-content">
+                    <a href="login.html" id="login-link" style="display: block;">Login</a>
+                    <a href="register.html" id="register-link" style="display: block;">Register</a>
+                    <a href="profile.html" id="profile-link" style="display: none;">Profile</a>
+                    <a href="Home.html" id="logout-link" style="display: none;">Logout</a>
+                </div>
+            </div>
+            <div class="barst">
+                <img src="hamburger-icon.png" alt="Hamburger Menu" class="hamburger-icon">
+            </div>
+        </div>
+        <div id="floating-cart">
+            <img src="cart-icon.png" alt="Cart Icon" id="cart-icon">
+            <span id="cart-counter">0</span> <!-- Counter starts at 0 -->
+        </div>
+    </header>
+    <main>
+        <div class="menu-nav-container">
+            <button class="menu-toggle" aria-label="Toggle Menu">&#x25BC;</button> 
+            <nav class="menu-nav-links">
+                <a href="Menu.html">Burgers</a>
+                <a href="Pizza.html">Pizza</a>
+                <a href="Pasta.html" class="active">Pasta</a>
+                <a href="Local_Dishes.html">Local Dishes</a>
+                <a href="Small_Snacks.html">Snacks</a>
+                <a href="Drinks.html">Drinks</a>
+                <a href="Cocktails.html">Cocktails</a>
+            </nav>
+        </div>
+        <section class="menu-container">
+            <div class="menu-item">
+                <img src="Beef Bacon Carbonara.jpeg" alt="Beef Bacon Carbonara">
+                <h3>Beef Bacon Carbonara</h3>
+                <p class="price">RM 32.90</p>
+                <p class="description">Egg Yolk, Parmesan, Crispy Beef Bacon, Mix Herbs, Parmesan, Linguine</p>
+                <button class="add-to-cart" data-name="Beef Bacon Carbonara" data-price="32.90">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="Grilled Chicken Peppers Olio.jpeg" alt="Grilled Chicken Peppers Olio">
+                <h3>Grilled Chicken Peppers Olio</h3>
+                <p class="price">RM 30.90</p>
+                <p class="description">Grilled Chicken, Chilli Flakes, Peppers, Coriander, Parmesan, Butter, Linguine</p>
+                <button class="add-to-cart" data-name="Grilled Chicken Peppers Olio" data-price="30.90">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="Chicken Rigatoni.jpeg" alt="Chicken Sausage Rigatoni">
+                <h3>Chicken Sausage Rigatoni</h3>
+                <p class="price">RM 34.90</p>
+                <p class="description">Grilled Chicken Slices, Spinach, Tomato Sauce, Chilli Flakes, Coriander, Parmesan, Rigatoni</p>
+                <button class="add-to-cart" data-name="Chicken Sausage Rigatoni" data-price="34.90">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="Mac & Cheese.jpeg" alt="Creamy Mac & Cheese">
+                <h3>Creamy Mac & Cheese</h3>
+                <p class="price">RM 30.90</p>
+                <p class="description">Chicken Ham, Mix Herbs, Mix Shredded Cheese, Elbow Macaroni</p>
+                <button class="add-to-cart" data-name="Creamy Mac & Cheese" data-price="30.90">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart-popup">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Total: RM 0.00</p>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Managed by RATA</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/RATASubangJaya/?locale=ms_MY">
+            <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/rata_subang/?hl=en">
+            <img src="instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+        <p>&copy; RATA 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

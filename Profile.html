@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATA Fusion Cuisine - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Home.html">
+                <img src="Web Fundamentals/RATA1.png" alt="RATA">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="Home.html" class="active">Home</a>
+            <a href="Reservation.html">Reservation</a>
+            <a href="Menu.html">Menu</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="right-icons">
+            <div class="user-dropdown">
+                <img src="Web Fundamentals/usericon.png" alt="User Icon" class="userIcon">
+                <div class="dropdown-content">
+                    <a href="login.html" id="login-link" style="display: block;">Login</a>
+                    <a href="register.html" id="register-link" style="display: block;">Register</a>
+                    <a href="profile.html" id="profile-link" style="display: none;">Profile</a>
+                    <a href="Home.html" id="logout-link" style="display: none;">Logout</a>
+                </div>
+            </div>
+            <div class="barst">
+                <img src="Web Fundamentals/hamburger-icon.png" alt="Hamburger Menu" class="hamburger-icon">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="Web Fundamentals/usericon.png" alt="User Icon" class="profile-icon">
+            </div>
+            <div class="profile-info">
+                <label for="username"><b>Username:</b></label>
+                <input type="text" id="Username" disabled>
+                
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" disabled>
+            </div>
+            <button class="logout-button" onclick="logout()">Logout</button>
+        </div>    
+    </main>
+    <footer>
+        <p>Managed by RATA</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/RATASubangJaya/?locale=ms_MY">
+            <img src="Web Fundamentals/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/rata_subang/?hl=en">
+            <img src="Web Fundamentals/instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+        <p>&copy; RATA 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
